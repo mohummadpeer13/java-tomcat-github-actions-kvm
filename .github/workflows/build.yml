@@ -42,7 +42,7 @@ jobs:
       with:
         host: ${{ secrets.OWNHOST }}
         username: ${{ secrets.OWNUSERNAME }}
-        key: ${{ secrets.OWNKEY }}
+        password: ${{ secrets.OWNPASSWORD }}
         port: ${{ secrets.OWNPORT }}
         source: "target/ROOT.war"
         target: /opt/
