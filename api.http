@@ -1,0 +1,23 @@
+###
+
+GET http://localhost:8087/questions HTTP/1.1
+
+###
+
+GET http://localhost:8087/questions/category/NETOPS HTTP/1.1
+
+###
+
+POST http://localhost:8087/questions HTTP/1.1
+content-type: application/json
+
+{
+    "questionTitle": "Comment faire un serveur sous Openstack",
+    "option1": "vm",
+    "option2": "virt",
+    "option3": "kvm",
+    "option4": "libvirt",
+    "rightAnswer": "virt-manager",
+    "difficultylevel": "hight",
+    "category": "NETOPS"
+  }
